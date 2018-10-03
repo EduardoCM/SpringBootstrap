@@ -1,6 +1,6 @@
 org/certificatic/controller/OperacionesController.class
 org/certificatic/controller/LoginController.class
-org/certificatic/controller/IndexController.class
 org/certificatic/model/Admin.class
+org/certificatic/controller/IndexController.class
 org/certificatic/model/User.class
 org/certificatic/controller/AdminController.class

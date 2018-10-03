@@ -1,6 +1,9 @@
 package org.certificatic.controller;
 
+import org.certificatic.model.Cliente;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -13,9 +16,22 @@ public class OperacionesController {
 	}
 	
 	@RequestMapping("/clientes")
-	public String clientes() {
+	public String clientes(Model model) {
+		
 		System.out.println(":::: Entro a clientes");
+		model.addAttribute("cliente", new Cliente());
+		
 		return "operaciones/clientes";
+	}
+	
+	@RequestMapping("/guardarCliente")
+	public String guardarCliente(@ModelAttribute("cliente") Cliente cliente, Model model ) {
+		System.out.println("::: Guardando cliente :::::");
+		System.out.println(cliente);
+		
+		model.addAttribute("cliente", new Cliente());
+		
+	   return "operaciones/clientes";	
 	}
 	
 	@RequestMapping("/seguros")

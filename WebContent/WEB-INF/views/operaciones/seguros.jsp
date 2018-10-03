@@ -14,6 +14,8 @@
 </head>
 <body>
 
+<h5>Usuario</h5>
+
 <div class="container">
 
       <!-- Static navbar -->
@@ -44,11 +46,15 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1>Menu Principal seguros</h1>
+        <h2>Seguros</h2>
         <p>Bienvenido a seguros</p>
         
-        Usuario Logeado: <c:out value="${usuarioLogin.user}"></c:out>
-
+        <button type="button" class="btn btn-success">Registrar Nuevo</button>
+        <button type="button" class="btn btn-primary">Imprimir Poliza</button>
+        <button type="button" class="btn btn-warning">Consultar Status</button>
+        <button type="button" class="btn btn-danger">Eliminar</button>
+        <button type="button" class="btn btn-info">Mostrar Polizas</button>
+        
       </div>
 
     </div> <!-- /container -->

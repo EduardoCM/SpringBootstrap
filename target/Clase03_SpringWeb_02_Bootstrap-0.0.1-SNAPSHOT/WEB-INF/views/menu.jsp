@@ -44,11 +44,8 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1>Menu Principal de sistema</h1>
-        <p>Bienvenido al Sistema Boletin informativo</p>
+        <p>Boletin informativo</p>
         
-        Usuario Logeado: <c:out value="${usuarioLogin.user}"></c:out>
-
       </div>
 
     </div> <!-- /container -->
